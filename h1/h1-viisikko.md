@@ -44,6 +44,7 @@ Started = ajankohta
 Duration = kesto (ms)    
 Tapahtuma onnistunut.   
 
-2. file.managed/absent   
+2. file.managed/absent
+
 Testaan tiedoston "olemassa" olemassaoloa eli managed-vaihtoehtoa.   
 $ sudo salt-call --local -l info state.single file.managed /home/sibbe/olemassa
