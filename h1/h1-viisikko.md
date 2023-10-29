@@ -47,4 +47,14 @@ Tapahtuma onnistunut.
 2. file.managed/absent
 
 Testaan tiedoston "olemassa" olemassaoloa eli managed-vaihtoehtoa.   
-$ sudo salt-call --local -l info state.single file.managed /home/sibbe/olemassa
+$ sudo salt-call --local -l info state.single file.managed /home/sibbe/olemassa   
+![img](./shh.png)   
+Samat käsitteet kuin aikaisemmassa kohdassa.   
+INFO-tekstit kertovat mitä tapahtuu   
+WARNING ilmaisee kohdat, joita ei ole määritelty   
+Tiedosto on olemassa.   
+
+3. service.running/dead
+   
+Testaan Apache2:lla molemmat komentovaihtoehdot   
+sudo salt-call --local -l info state.single service.dead apache2 enable=False   
