@@ -70,4 +70,9 @@ Testaan, onko oma käyttäjäni (sibbe) olemassa
 $ sudo salt-call --local -l info state.single user.present sibbe   
 ![img](./olen.png)   
 Olen olemassa, mutta voi ei   
+![img](./no.png)   
+Kuka hän on   
+Poistan hänet   
+$ sudo salt-call --local -l info state.single user.absent tuhoaja_uhoaja   
+
 
