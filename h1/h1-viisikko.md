@@ -20,4 +20,4 @@
 
 ## a) Salt-minionin asennus koneelle
 
-![img](./Palvelinten_Hallinta.png)
+![img](./ins.png)
