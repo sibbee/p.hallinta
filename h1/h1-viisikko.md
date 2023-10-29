@@ -31,7 +31,19 @@ Tämän jälkeen suoritin asennusprosessin "Saltin asennus Debian 12" ohjeiden m
 ## b) Viisi tärkeintä
 
 Ohjeet tehtävään, joiden avulla tehtävä suoritettu: https://terokarvinen.com/2021/salt-run-command-locally/  
-1. pkg.installed/removed
+1. pkg.installed/removed, testaan installed-vaihtoehtoa.
    
 Testaan onko Salt-minion asennettuna virtuaalikoneelle (:D)  
-$ sudo salt-call --local -l info state.single pkg.installed salt-minion  
+$ sudo salt-call --local -l info state.single pkg.installed salt-minion    
+![img](./lol.png)   
+ID = mikä ohjelma   
+Function = mikä komento   
+Result = ohjelma on asennettu   
+Comment = kommentti; kaikki paketit asennettu   
+Started = ajankohta   
+Duration = kesto (ms)    
+Tapahtuma onnistunut.   
+
+2. file.managed/absent   
+Testaan tiedoston "olemassa" olemassaoloa eli managed-vaihtoehtoa.   
+$ sudo salt-call --local -l info state.single file.managed /home/sibbe/olemassa
