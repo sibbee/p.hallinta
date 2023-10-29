@@ -68,4 +68,6 @@ Tapahtumat onnistuivat ja muuttuivat.
 
 Testaan, onko oma käyttäjäni (sibbe) olemassa   
 $ sudo salt-call --local -l info state.single user.present sibbe   
+![img](./olen.png)   
+Olen olemassa, mutta voi ei   
 
