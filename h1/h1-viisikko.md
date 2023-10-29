@@ -66,7 +66,7 @@ Tapahtumat onnistuivat ja muuttuivat.
 
 4. user.present/absent
 
-Testaan, onko oma käyttäjäni (sibbe) olemassa   
+Testaan, onko oma käyttäjäni (sibbe) olemassa sekä yllätysseikkailijan kiinnijääminen   
 $ sudo salt-call --local -l info state.single user.present sibbe   
 ![img](./olen.png)   
 Olen olemassa, mutta voi ei   
@@ -74,5 +74,6 @@ Olen olemassa, mutta voi ei
 Kuka hän on   
 Poistan hänet   
 $ sudo salt-call --local -l info state.single user.absent tuhoaja_uhoaja   
-
+![img](./jes.png)   
+Tapahtuma onnistunut.
 
