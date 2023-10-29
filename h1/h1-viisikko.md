@@ -57,4 +57,15 @@ Tiedosto on olemassa.
 3. service.running/dead
    
 Testaan Apache2:lla molemmat komentovaihtoehdot   
-sudo salt-call --local -l info state.single service.dead apache2 enable=False   
+$ sudo salt-call --local -l info state.single service.dead apache2 enable=False   
+![img](./kolmas.png)   
+$ sudo salt-call --local -l info state.single service.running apache2 enable=True   
+![img](./neljas.png)   
+Suurin piirtein yhtä kauan kesti komentojen ajo. Kommentit kertovat tilan jota tässä haettiinkin.   
+Tapahtumat onnistuivat ja muuttuivat.   
+
+4. user.present/absent
+
+Testaan, onko oma käyttäjäni (sibbe) olemassa   
+$ sudo salt-call --local -l info state.single user.present sibbe   
+
