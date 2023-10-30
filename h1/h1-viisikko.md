@@ -87,5 +87,8 @@ Testaan luoda tiedoston
 Kyseisellä komennolla salt tarkastaa onko tiedostoa ja luo sen jos ei ole.   
 Salt ei tällä komennolla kuitenkaan tarkista tiedoston sisältöä.   
 
-## c) Indepotentti   
+## c) Indepotenssi   
+
+Tietotekniikassa metodi on indepotentti, jos sen vaikutukset pysyvät samana riippumatta suoritusten määrästä.   
+Tässä esimerkki   
 
