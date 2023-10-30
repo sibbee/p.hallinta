@@ -80,5 +80,12 @@ Tapahtuma onnistunut.
 5. cmd.run
 
 Testaan luoda tiedoston   
+```sudo salt-call --local -l info state.single cmd.run 'touch /home/sibbe/lmao'```   
 
+![img](./juu.png)   
+
+Kyseisellä komennolla salt tarkastaa onko tiedostoa ja luo sen jos ei ole.   
+Salt ei tällä komennolla kuitenkaan tarkista tiedoston sisältöä.   
+
+## c) Indepotentti   
 
