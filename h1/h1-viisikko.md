@@ -75,5 +75,10 @@ Kuka hän on
 Poistan hänet   
 $ sudo salt-call --local -l info state.single user.absent tuhoaja_uhoaja   
 ![img](./jes.png)   
-Tapahtuma onnistunut.
+Tapahtuma onnistunut.   
+
+5. cmd.run
+
+Testaan luoda tiedoston   
+
 
