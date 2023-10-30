@@ -34,7 +34,8 @@ Ohjeet tehtävään, joiden avulla tehtävä suoritettu: https://terokarvinen.co
 1. pkg.installed/removed, testaan installed-vaihtoehtoa.
    
 Testaan onko Salt-minion asennettuna virtuaalikoneelle (:D)  
-$ sudo salt-call --local -l info state.single pkg.installed salt-minion    
+```$ sudo salt-call --local -l info state.single pkg.installed salt-minion```   
+
 ![img](./lol.png)   
 ID = mikä ohjelma   
 Function = mikä komento   
@@ -47,8 +48,10 @@ Tapahtuma onnistunut.
 2. file.managed/absent
 
 Testaan tiedoston "olemassa" olemassaoloa eli managed-vaihtoehtoa.   
-$ sudo salt-call --local -l info state.single file.managed /home/sibbe/olemassa   
+```$ sudo salt-call --local -l info state.single file.managed /home/sibbe/olemassa```   
+
 ![img](./shh.png)   
+
 Samat käsitteet kuin aikaisemmassa kohdassa.   
 INFO-tekstit kertovat mitä tapahtuu   
 WARNING ilmaisee kohdat, joita ei ole määritelty   
@@ -57,9 +60,12 @@ Tiedosto on olemassa.
 3. service.running/dead
    
 Testaan Apache2:lla molemmat komentovaihtoehdot   
-$ sudo salt-call --local -l info state.single service.dead apache2 enable=False   
+```$ sudo salt-call --local -l info state.single service.dead apache2 enable=False```   
+
 ![img](./kolmas.png)   
-$ sudo salt-call --local -l info state.single service.running apache2 enable=True   
+
+```$ sudo salt-call --local -l info state.single service.running apache2 enable=True```   
+
 ![img](./neljas.png)   
 Suurin piirtein yhtä kauan kesti komentojen ajo. Kommentit kertovat tilan jota tässä haettiinkin.   
 Tapahtumat onnistuivat ja muuttuivat.   
@@ -67,20 +73,23 @@ Tapahtumat onnistuivat ja muuttuivat.
 4. user.present/absent
 
 Testaan, onko oma käyttäjäni (sibbe) olemassa sekä yllätysseikkailijan kiinnijääminen   
-$ sudo salt-call --local -l info state.single user.present sibbe   
+```$ sudo salt-call --local -l info state.single user.present sibbe```   
+
 ![img](./olen.png)   
 Olen olemassa, mutta voi ei   
 ![img](./no.png)   
 Kuka hän on   
 Poistan hänet   
-$ sudo salt-call --local -l info state.single user.absent tuhoaja_uhoaja   
+```$ sudo salt-call --local -l info state.single user.absent tuhoaja_uhoaja```   
+
 ![img](./jes.png)   
 Tapahtuma onnistunut.   
 
 5. cmd.run
 
 Testaan luoda tiedoston   
-```sudo salt-call --local -l info state.single cmd.run 'touch /home/sibbe/lmao'```   
+
+```$ sudo salt-call --local -l info state.single cmd.run 'touch /home/sibbe/lmao'```   
 
 ![img](./juu.png)   
 
@@ -91,4 +100,9 @@ Salt ei tällä komennolla kuitenkaan tarkista tiedoston sisältöä.
 
 Tietotekniikassa metodi on indepotentti, jos sen vaikutukset pysyvät samana riippumatta suoritusten määrästä.   
 Tässä esimerkki   
+![img](./on.png)   
+Komento ei asentanut palomuuria, koska se on jo olemassa eli muutoksia ei tehty.   
+
+## d) Tietoa koneesta   
+Komennolla ```$ sudo salt-call --local grains.items``` tarkastelen tietoja koneestani   
 
