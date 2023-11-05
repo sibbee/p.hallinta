@@ -95,6 +95,8 @@ Tämän jälkeen testasin onko samainen ohjelma päällä
 
 ## Tietojen keräystä orjista   
 
+Tähän
+
 
 
 
