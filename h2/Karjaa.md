@@ -95,7 +95,21 @@ Tämän jälkeen testasin onko samainen ohjelma päällä
 
 ## Tietojen keräystä orjista   
 
-Tähän
+```$ sudo salt '*' grains.item osfinger cpu_model```   
+
+![img](./h2.12.png)   
+
+Intel i5-12600KF prosessori
+
+```$ sudo salt '*' grains.item osfinger mem_total```   
+
+![img](./h2.13.png)   
+
+Muistin määrä.   
+
+## Shell-komento   
+
+
 
 
 
