@@ -2,4 +2,21 @@
 
 # x) Lue ja tiivistä  
 
-## 
+## What is the definition of "cattle not pets"?  
+
+## Vagrant  
+1. Päivitys ```$ sudo apt-get update```
+2. Asennus ```$ sudo apt-get install vagrant virtualbox```
+3. Alusta käyttöjärjestelmä ```$ vagrant init``` komennolla
+4. ```$ vagrant up``` & ssh-yhteys ```$ vagrant ssh```
+5. Kun haluat lopettaa käytön -> vagrant destroy
+Ohjeet Tero Karvisen materiaalista https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/  
+
+## Salt Vagrant  
+1. Virtualisointiympäristö
+   -> VirtualBox, Vagrant & tekstieditori
+2. Vagrantfile tekstieditoriin määritystä varten
+3. 
+
+# a) Vagrantin asennus  
+
