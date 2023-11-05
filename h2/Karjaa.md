@@ -110,9 +110,15 @@ Muistin määrä.
 ## Shell-komento   
 
 ```$ sudo salt '*' cmd.run 'ls -lah'```   
-Shell-komento jolla listataan minioneiden 
+
+Shell-komento, tuttu ```$ ls -la``` listaus
 
 ![img](./h2.14.png)   
+
+## Hello, IaC   
+
+Teen infraa koodina Tero Karvisen esimerkin mukaan (https://terokarvinen.com/2023/salt-vagrant/)   
+
 
 
 
