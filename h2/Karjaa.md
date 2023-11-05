@@ -119,6 +119,12 @@ Shell-komento, tuttu ```$ ls -la``` listaus
 
 Teen infraa koodina Tero Karvisen esimerkin mukaan (https://terokarvinen.com/2023/salt-vagrant/)   
 
+![img](./h2.15.png)   
+
+Ja tämän jälkeen testasin, onko pyytämäni muutos oikeasti tehty:
+
+
+
 
 
 
