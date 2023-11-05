@@ -109,6 +109,13 @@ Muistin määrä.
 
 ## Shell-komento   
 
+```$ sudo salt '*' cmd.run 'ls -lah'```   
+Shell-komento jolla listataan minioneiden 
+
+![img](./h2.14.png)   
+
+
+
 
 
 
