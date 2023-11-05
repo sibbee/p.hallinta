@@ -47,12 +47,31 @@ Sama versio Ubuntusta tehtävänannon kanssa, vanha on mutta ei väliä
 ![imh](./h2.4.png)   
 Ssh-yhteyden muodostaminen onnistui. Kuvassa pari komentoa tilanteesta   
 
-# Oma orjansa   
+# c) Oma orjansa   
 
 Tehtäväohjeet Tero Karvisen materiaaleista https://terokarvinen.com/2023/salt-vagrant/   
 
 Ensimmäiseksi copypastesin ohjesivun valmiiksi kirjoitetun Vagrantfilen olemassa olevan tiedoston päälle   
 Tämän jälkeen ```$ vagrant up``` ja odotetaan pieni hetki   
+
+![img](./h2.5.png)   
+(Todella pitkä lista masterin ja orjien määrityksistä)
+
+![img](./h2.6.png)   
+
+Tämän jälkeen ssh-yhteys masteriin, hyväksytään orjien avaimet ja testataan yhteys pingillä
+
+![img](./h2.7.png)   
+
+Herran ja orjien asennus on onnistunut.   
+
+# Loput tehtävät verkossa   
+
+## Idempotentteja komentoja   
+Ensin 
+
+
+
 
 
 
