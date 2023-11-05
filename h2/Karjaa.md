@@ -68,15 +68,26 @@ Herran ja orjien asennus on onnistunut.
 # Loput tehtävät verkossa   
 
 ## Idempotentteja komentoja   
+Esimerkkikomennot otin Tero Karvisen materiaalista https://terokarvinen.com/2023/salt-vagrant/   
+
 Ensin asennan apache2 orjiin   
 ```$ sudo salt '*' state.single pkg.installed apache2```   
 
-![img](h2.8.png)   
+![img](./h2.8.png)   
 
 ![img](h2.9.png)   
 Kuvassa näkyy t002 koneen asennustapahtuman tiedot ja t001 koneen yhteenveto   
 Changed=1 molemmille koneille eli asennus tapahtui.   
 Ajoin saman komennon uudelleen todistaakseni idempotenssin;   
+
+![img](./h2.10.png)   
+
+Sama ilmoitus tuli myös t002 koneelle.   
+"All specified packages are already installed"   
+
+Tämän jälkeen testasin onko samainen ohjelma päällä   
+```$ sudo salt '*' state.single service.running apache2```   
+
 
 
 
