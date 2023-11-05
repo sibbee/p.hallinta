@@ -23,4 +23,16 @@ Asennusohjeet Tero Karvisen materiaalista https://terokarvinen.com/2023/salt-vag
 Isäntäkäyttöjärjestelmäni Windows 10 
 
 Latasin Vagrantin Windows AMD64 Versio 2.4.0 tästä linkistä: https://developer.hashicorp.com/vagrant/downloads   
+Käyttöehtojen hyväsymisen jälkeen asennus alkaa   
+
+![img](./h2.1.png)   
+
+Tämän jälkeen ohjelma pyytää koneen uudelleenkäynnistystä.   
+Sitä hyväksyessä tajusin, että ennen uudelleenkäynnistystä kannattaa tallentaa raportin muutokset   
+Tajusin siis itse liian myöhään   
+Vagrantin asentaminen onnistui.   
+
+# b) Yksi maankiertäjä   
+Tämän tehtävän ohjeet Tero Karvisen materiaalista https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/   
+
 
