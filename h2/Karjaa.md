@@ -19,4 +19,8 @@ Ohjeet Tero Karvisen materiaalista https://terokarvinen.com/2017/04/11/vagrant-r
 3. 
 
 # a) Vagrantin asennus  
+Asennusohjeet Tero Karvisen materiaalista https://terokarvinen.com/2023/salt-vagrant/   
+Isäntäkäyttöjärjestelmäni Windows 10 
+
+Latasin Vagrantin Windows AMD64 Versio 2.4.0 tästä linkistä: https://developer.hashicorp.com/vagrant/downloads   
 
