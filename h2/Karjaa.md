@@ -67,8 +67,9 @@ Herran ja orjien asennus on onnistunut.
 
 # Loput tehtävät verkossa   
 
-## Idempotentteja komentoja   
 Esimerkkikomennot otin Tero Karvisen materiaalista https://terokarvinen.com/2023/salt-vagrant/   
+
+## Idempotentteja komentoja      
 
 Ensin asennan apache2 orjiin   
 ```$ sudo salt '*' state.single pkg.installed apache2```   
@@ -87,6 +88,13 @@ Sama ilmoitus tuli myös t002 koneelle.
 
 Tämän jälkeen testasin onko samainen ohjelma päällä   
 ```$ sudo salt '*' state.single service.running apache2```   
+
+![img](./h2.11.png)   
+
+"The service apache2 is already running"   
+
+## Tietojen keräystä orjista   
+
 
 
 
