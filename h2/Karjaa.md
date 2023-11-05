@@ -48,7 +48,13 @@ Sama versio Ubuntusta tehtävänannon kanssa, vanha on mutta ei väliä
 Ssh-yhteyden muodostaminen onnistui. Kuvassa pari komentoa tilanteesta   
 
 # Oma orjansa   
+
 Tehtäväohjeet Tero Karvisen materiaaleista https://terokarvinen.com/2023/salt-vagrant/   
+
+Ensimmäiseksi copypastesin ohjesivun valmiiksi kirjoitetun Vagrantfilen olemassa olevan tiedoston päälle   
+Tämän jälkeen ```$ vagrant up``` ja odotetaan pieni hetki   
+
+
 
 
 
