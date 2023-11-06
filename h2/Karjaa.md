@@ -2,28 +2,40 @@
 
 # x) Lue ja tiivistä  
 
-## What is the definition of "cattle not pets"?  
+## Cattle & pets  
+Pet/lemmikki on useimmiten manuaalisesti hallittava ainutlaatuinen järjestelmä eli palvelin tai palvelinpari   
+   -> esim. keskustietokoneet, tietokantajärjestelmät   
+   
+Cattle/karja on kahden tai useamman palvelimen ryhmä, joka on rakennettu automaattisilla työkaluilla ja jotka voivat kaatua   
+   -> esim. verkkopalvelinryhmät   
+ 
+Richard Slater, [What is the definition of "cattle not pets"?](https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654)   
 
+   
 ## Vagrant  
 1. Päivitys ```$ sudo apt-get update```
 2. Asennus ```$ sudo apt-get install vagrant virtualbox```
 3. Alusta käyttöjärjestelmä ```$ vagrant init``` komennolla
 4. ```$ vagrant up``` & ssh-yhteys ```$ vagrant ssh```
-5. Kun haluat lopettaa käytön -> vagrant destroy
-Ohjeet Tero Karvisen materiaalista https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/  
+5. Kun haluat lopettaa käytön -> ```$ vagrant destroy```      
+Ohjeet Tero Karvisen materiaalista [Vagrant Revisited](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)   
 
-## Salt Vagrant  
-1. Virtualisointiympäristö
-   -> VirtualBox, Vagrant & tekstieditori
-2. Vagrantfile tekstieditoriin määritystä varten
-3. 
+## Salt Vagrant   
+Tämän tehtävän materiaali Tero Karviselta [Salt Vagrant](https://terokarvinen.com/2023/salt-vagrant/)   
+1. Virtualisointiympäristö   
+   -> VirtualBox, Vagrant & tekstieditori   
+2. Vagrantfile tekstieditoriin määritystä varten, ohjeessa yksi herra ja kaksi orjaa   
+3. Vagrantin käynnistys & ```$ vagrant ssh tmaster```   
+4. Masterilla hyväksytään orjien avaimet ja tarkistetaan yhteys   
+5. Orjia hallitaan komennoilla   
+6. Tavoitteena idempotenssi!   
 
 # a) Vagrantin asennus  
 Asennusohjeet Tero Karvisen materiaalista https://terokarvinen.com/2023/salt-vagrant/   
 Isäntäkäyttöjärjestelmäni Windows 10 
 
 Latasin Vagrantin Windows AMD64 Versio 2.4.0 tästä linkistä: https://developer.hashicorp.com/vagrant/downloads   
-Käyttöehtojen hyväsymisen jälkeen asennus alkaa   
+Käyttöehtojen hyväksymisen jälkeen asennus alkoi   
 
 ![img](./h2.1.png)   
 
@@ -33,25 +45,27 @@ Tajusin siis itse liian myöhään
 Vagrantin asentaminen onnistui.   
 
 # b) Yksi maankiertäjä   
-Tämän tehtävän ohjeet Tero Karvisen materiaalista https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/   
+Tämän tehtävän tein Tero Karvisen materiaalia seuraten [Vagrant Revisited](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)   
 
 Ensiksi alustetaan käyttöjärjestelmä   
 
 ![img](./h2.2.png)   
-Sama versio Ubuntusta tehtävänannon kanssa, vanha on mutta ei väliä
+Sama versio Ubuntusta kuin tehtävänannon kanssa, vanha on mutta ei tietääkseni väliä
 
 ![img](./h2.3.png)   
 
-
+Seuraavaksi kone käynnistettiin.
 
 ![imh](./h2.4.png)   
 Ssh-yhteyden muodostaminen onnistui. Kuvassa pari komentoa tilanteesta   
 
-# c) Oma orjansa   
+# c) Oma orjansa sekä D) Herra-orja arkkitehtuuri verkon yli   
 
 Tehtäväohjeet Tero Karvisen materiaaleista https://terokarvinen.com/2023/salt-vagrant/   
 
 Ensimmäiseksi copypastesin ohjesivun valmiiksi kirjoitetun Vagrantfilen olemassa olevan tiedoston päälle   
+Tämän tein resurssienhallinnassa, josta ei kuvaa.   
+Vagrantfilessa siis lukee, kuinka monta ja millaisia virtuaalikoneita halutaan luoda.   
 Tämän jälkeen ```$ vagrant up``` ja odotetaan pieni hetki   
 
 ![img](./h2.5.png)   
@@ -59,11 +73,12 @@ Tämän jälkeen ```$ vagrant up``` ja odotetaan pieni hetki
 
 ![img](./h2.6.png)   
 
-Tämän jälkeen ssh-yhteys masteriin, hyväksytään orjien avaimet ja testataan yhteys pingillä
+Tämän jälkeen otin ssh-yhteyden masteriin, hyväksyin orjien jo valmiiksi lähettämät avaimet ja testasin yhteyden ping-komennolla   
 
 ![img](./h2.7.png)   
 
-Herran ja orjien asennus on onnistunut.   
+Molemmat koneet vastaavat true, herra, orjat ja niiden välinen yhteys on luotu.   
+Tämän tehtävän teossa auttoi Chris Kiuru   
 
 # Loput tehtävät verkossa   
 
