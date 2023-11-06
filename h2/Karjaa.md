@@ -57,7 +57,7 @@ Sama versio Ubuntusta kuin tehtävänannon kanssa, vanha on mutta ei tietääkse
 Seuraavaksi kone käynnistettiin.
 
 ![imh](./h2.4.png)   
-Ssh-yhteyden muodostaminen onnistui. Kuvassa pari komentoa tilanteesta   
+Ssh-yhteyden muodostaminen onnistui. Kuvassa pari komentoa tilanteesta; pwd eli tämänhetkinen työkansio ja who eli kuka kyseessä   
 
 # c) Oma orjansa sekä D) Herra-orja arkkitehtuuri verkon yli   
 
@@ -136,6 +136,7 @@ Tein tämän tehtävän Tero Karvisen esimerkin mukaan (https://terokarvinen.com
 
 Ensin loin Salt State Filelle kansion hello komennolla ```$ sudo mkdir -p /srv/salt/hello```   
 Tämän jälkeen SLS-tiedoston luominen komennolla ```$ sudoedit /srv/salt/hello/init.sls```   
+(Chris K. [h2](https://github.com/bladexanarchy/pal_hal/blob/main/h2/h2.md))   
 
 ![img](./h2.17.png)   
 
@@ -147,6 +148,25 @@ Siirryin tätä varten t001 koneeseen
 ![img](./h2.16.png)   
 
 Tiedosto löytyi.   
+
+# Lähteet   
+
+Tero Karvinen. 2017. Vagrant Revisited - Install & Boot New Virtual Machine in 31 seconds. Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 5.11.2023.   
+
+Tero Karvinen. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu: 5.11.2023   
+
+Tero Karvinen. 2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 5.11.2023   
+
+Vagrant N.d. Install Vagrant. https://developer.hashicorp.com/vagrant/downloads   
+
+Chris Kiuru. h2. Luettavissa: https://github.com/bladexanarchy/pal_hal/blob/main/h2/h2.md   
+
+Richard Slater. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 5.11.2023   
+
+
+
+
+
 
 
 
