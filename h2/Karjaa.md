@@ -132,11 +132,20 @@ Shell-komento, tuttu ```$ ls -la``` listaus
 
 ## Hello, IaC   
 
-Teen infraa koodina Tero Karvisen esimerkin mukaan (https://terokarvinen.com/2023/salt-vagrant/)   
+Tein tämän tehtävän Tero Karvisen esimerkin mukaan (https://terokarvinen.com/2023/salt-vagrant/)   
+
+Ensin loin Salt State Filelle kansion hello komennolla ```$ sudo mkdir -p /srv/salt/hello```   
+Tämän jälkeen SLS-tiedoston luominen komennolla ```$ sudoedit /srv/salt/hello/init.sls```   
 
 ![img](./h2.15.png)   
 
 Ja tämän jälkeen testasin, onko pyytämäni muutos oikeasti tehty:
+Siirryin tätä varten t001 koneeseen   
+
+![img](./h2.16.png)   
+
+Tiedosto löytyi.   
+
 
 
 
