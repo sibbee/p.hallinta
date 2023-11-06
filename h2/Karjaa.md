@@ -137,6 +137,8 @@ Tein tämän tehtävän Tero Karvisen esimerkin mukaan (https://terokarvinen.com
 Ensin loin Salt State Filelle kansion hello komennolla ```$ sudo mkdir -p /srv/salt/hello```   
 Tämän jälkeen SLS-tiedoston luominen komennolla ```$ sudoedit /srv/salt/hello/init.sls```   
 
+![img](./h2.17.png)   
+
 ![img](./h2.15.png)   
 
 Ja tämän jälkeen testasin, onko pyytämäni muutos oikeasti tehty:
