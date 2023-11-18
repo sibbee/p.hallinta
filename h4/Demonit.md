@@ -56,11 +56,18 @@
 
   - The top.sls file:
   
-  Satojen tilojen ja tuhansien koneiden ympäristössä on epäkäytännöllistä ajaa lukuisia yksittäisiä tiloja
-    -> 
+  Satojen tilojen ja tuhansien koneiden ympäristössä on epäkäytännöllistä ajaa lukuisia yksittäisiä tiloja  
+    -> top.sls tiedosto
   
 
   - Create the SSH state, Create the Apache state:
+
+
+  ## Hello SLS!  
+
+  Ensin vagrant up komennolla kone päälle
+
+  
 
   
   
