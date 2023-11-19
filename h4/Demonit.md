@@ -63,7 +63,7 @@
   - Create the SSH state, Create the Apache state:
 
 
-  ## Hello SLS!  
+  ## a) Hello SLS! sekä b) Top  
 
   Aloitin käynnistämällä koneen ```$ vagrant up```  
   Jonka jälkeen ssh-yhteys masteriin ```$ vagrant ssh tmaster```  
@@ -71,12 +71,22 @@
   Ja yhteyden testaaminen ```$ sudo salt '*' test.ping``` (onnistui)  
 
   Tämän jälkeen loin [Tero Karvisen ohjeiden](https://terokarvinen.com/2023/salt-vagrant/) mukaisesti init.sls tiedoston  
-    -> ```$ sudo mkdir -p /srv/salt/hello``` loi hello-kansion ja muut puuttuvat -p optionilla  
-    Kuvasta näkyykin 
+  
+  -> ```$ sudo mkdir -p /srv/salt/hello``` loi hello-kansion ja muut puuttuvat -p optionilla  
+    
+  Kuvasta näkyykin haluttu tilanne eli tiedostojen luominen tapahtunut.  
 
   ![img](./h4.1.png)  
 
-  KKK
+  Exit masterista ja siirryin minionille t001 tarkastamaan, että tiedosto varmasti löytyy.  
+
+  ![img](./h4.2.png)  
+
+  Sieltä löytyi. Takaisin masterille ja ajoin komennon ```$ sudo salt '*' state.apply uudelleen  
+
+  
+
+  
     
   
   
