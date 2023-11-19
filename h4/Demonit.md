@@ -108,6 +108,17 @@
   Ohjeissa testataan vielä että demoni _oikeasti_ on käynnissä käyttämällä curl-komentoa;  
   (Tässä vaiheessa asensin curlin ```$ sudo apt-get -y install curl```)  
   Jonka jälkeen ip-osoiteselvitys ja curl  
+
+  ![img](./h4.7.png)  
+
+  It works :-)  Siispä poistan Apachen vielä käsin  
+  ```$ sudo salt 't002' state.single pkg.removed apache2```  
+  
+  
+
+  
+
+  
   
 
   
