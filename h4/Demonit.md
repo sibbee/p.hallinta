@@ -113,6 +113,50 @@
 
   It works :-)  Siispä poistan Apachen vielä käsin  
   ```$ sudo salt 't002' state.single pkg.removed apache2```  
+
+  ![img](./h4.8.png)  
+
+  "All targeted packages were removed" eli poisto onnistui; Succeeded: 1  
+
+  Seuraavaksi automatisointiyritys. 
+
+  Loin ensiksi uuden kansion ```$ sudo mkdir -p /srv/salt/apache```  
+  Ja apache-kansioon uusi tilatiedosto, johon kirjoitin seuraavasti:  
+
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/a1881a6d-8690-452e-861e-81fe88c30693)  
+
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/7421e583-137a-40fe-bf75-958f9f967ce5)  
+
+  Kuvissa tekstit ovat korjauksien jälkeiset. Tässä pari mokaa lol  
+  
+  - Aluksi vahingossa pkg.installed:  
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/fda27911-6529-4b28-9d28-a11e2dd062cf)  
+
+  - Ja vielä alkuperäisen apache-kansion nimeksi apache2  
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/d1bc5b21-8480-4468-b3d9-2c0be1dbeddd)  
+
+  Korjasin siis nuo ja komennolla ```$ sudo salt '*' state.apply apache2``` näytti seuraavaa:  
+
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/a4944af0-9c6e-4c43-8974-13c7945593b7)  
+
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/48311f7e-e0a4-4456-8bb0-6861feba7db8)  
+
+
+
+  
+
+  
+
+
+  
+
+  
+
+  
+  
+
+
+  
   
   
 
