@@ -82,7 +82,19 @@
 
   ![img](./h4.2.png)  
 
-  Sieltä löytyi. Takaisin masterille ja ajoin komennon ```$ sudo salt '*' state.apply uudelleen  
+  Sieltä löytyi. Takaisin masterille ja ajoin komennon ```$ sudo salt '*' state.apply``` uudelleen  
+
+  ![img](./h4.3.png)  
+
+  Kuvasta voi lukea, että komennon ajon jälkeen muutoksia ei tapahtunut.  
+
+  ## c) Apache  
+
+  Ensimmäiseksi Apachen asennus [Tero Karvisen ohjeita](https://terokarvinen.com/2023/salt-vagrant/) katsoen koska en muistanut komentoa  
+  Komento olikin ```sudo salt 't002' state.single pkg.installed apache2```, asensin siis toiselle orjalle Apachen.  
+  
+  
+  
 
   
 
