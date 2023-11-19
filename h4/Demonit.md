@@ -90,12 +90,31 @@
 
   ## c) Apache  
 
-  Ensimmäiseksi Apachen asennus [Tero Karvisen ohjeita](https://terokarvinen.com/2023/salt-vagrant/) katsoen koska en muistanut komentoa  
+  Ensimmäiseksi Apachen asennus [Tero Karvisen ohjeita](https://terokarvinen.com/2023/salt-vagrant/) katsoen erityisesti komentojen takia    
+  
   Komento olikin ```sudo salt 't002' state.single pkg.installed apache2```, asensin siis toiselle orjalle Apachen.  
 
   ![img](./h4.4.png)  
 
   Tässä välissä listaus monista muutoksista  
+
+  ![img](./h4.5.png)  
+
+  _Succeeded: 1_ eli onnistunut komennon ajo ja _changed=1_ eli muuttunut tila: Apachen asennus.  
+
+  Tässä vaiheessa testasin vielä ```$ sudo salt 't002' state.single service.running apache2```  
+    ... ja vastaukseksi sain "The service apache2 is already running"  
+
+  Ohjeissa testataan vielä että demoni _oikeasti_ on käynnissä käyttämällä curl-komentoa;  
+  (Tässä vaiheessa asensin curlin ```$ sudo apt-get -y install curl```)  
+  Jonka jälkeen ip-osoiteselvitys ja curl  
+  
+
+  
+
+  
+
+  
 
   
   
