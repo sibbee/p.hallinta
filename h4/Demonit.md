@@ -92,6 +92,12 @@
 
   Ensimmäiseksi Apachen asennus [Tero Karvisen ohjeita](https://terokarvinen.com/2023/salt-vagrant/) katsoen koska en muistanut komentoa  
   Komento olikin ```sudo salt 't002' state.single pkg.installed apache2```, asensin siis toiselle orjalle Apachen.  
+
+  ![img](./h4.4.png)  
+
+  Tässä välissä listaus monista muutoksista  
+
+  
   
   
   
