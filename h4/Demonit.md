@@ -65,7 +65,16 @@
 
   ## Hello SLS!  
 
-  Ensin vagrant up komennolla kone päälle  
+  Aloitin käynnistämällä koneen ```$ vagrant up```  
+  Jonka jälkeen ssh-yhteys masteriin ```$ vagrant ssh tmaster```  
+  Josta orjien avainten hyväksyminen ```$ sudo salt-key -A```  
+  Ja yhteyden testaaminen ```$ sudo salt '*' test.ping``` (onnistui)  
+
+  Tämän jälkeen loin [Tero Karvisen ohjeiden](https://terokarvinen.com/2023/salt-vagrant/) mukaisesti init.sls tiedoston  
+    -> ```$ sudo mkdir -p /srv/salt/hello``` loi hello-kansion ja muut puuttuvat -p optionilla  
+    
+  
+  
 
   
 
