@@ -72,6 +72,11 @@
 
   Tämän jälkeen loin [Tero Karvisen ohjeiden](https://terokarvinen.com/2023/salt-vagrant/) mukaisesti init.sls tiedoston  
     -> ```$ sudo mkdir -p /srv/salt/hello``` loi hello-kansion ja muut puuttuvat -p optionilla  
+    Kuvasta näkyykin 
+
+  ![img](./h4.1.png)  
+
+  KKK
     
   
   
