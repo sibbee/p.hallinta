@@ -122,10 +122,17 @@
 
   Loin ensiksi uuden kansion ```$ sudo mkdir -p /srv/salt/apache```  
   Ja apache-kansioon uusi tilatiedosto, johon kirjoitin seuraavasti:  
+  ([Salt user guide](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules))  
 
   ![image](https://github.com/sibbee/p.hallinta/assets/149330317/a1881a6d-8690-452e-861e-81fe88c30693)  
 
   ![image](https://github.com/sibbee/p.hallinta/assets/149330317/7421e583-137a-40fe-bf75-958f9f967ce5)  
+
+  Eli  
+  Apache2: pkg.installed (avain: arvo pari); viittaa apachen asennusta kohteeseen  
+  /var/www/html/index.html: file.managed määrittää kyseisessä polussa olevan HTML tiedoston tilan hallinnan  
+  Name määrittää HTML tiedoston tavoitesijainnin minionissa  
+  Source eli lähde; tässä tapauksessa tiedosto testi.html hakemistosta apache2 mainittuun kohteeseen  
 
   Kuvissa tekstit ovat korjauksien jälkeiset. Tässä pari mokaa lol  
   
@@ -140,6 +147,15 @@
   ![image](https://github.com/sibbee/p.hallinta/assets/149330317/a4944af0-9c6e-4c43-8974-13c7945593b7)  
 
   ![image](https://github.com/sibbee/p.hallinta/assets/149330317/48311f7e-e0a4-4456-8bb0-6861feba7db8)  
+
+  "The following packages were installed/updated: apache2" eli Apachen asennus onnistui.  
+
+  ## SSHouto  
+
+  
+  
+
+  
 
 
 
