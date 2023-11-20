@@ -3,17 +3,14 @@
 ### Salt Vagrant  
   [Salt Vagrant](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)   
   Salt state / tilatiedoston ja sen kansion luominen;  
-  - ```$ sudo mkdir -p /srv/salt/lol```, jossa -p luo hakemistot niiden puuttuessa  
-  - ```$ sudoedit /srv/salt/lol/muuttuja.sls```  
+  - ```$ sudo mkdir -p /srv/salt/ohjelma```, jossa -p luo hakemistot niiden puuttuessa  
+  - ```$ sudoedit /srv/salt/ohjelma/init.sls```  
   - YAML: ei tabeja!  
   - _File.managed_ lataa tiedostot salt masterista ja asettaa kohdejärjestelmään
   - top.sls; top tiedosto määrittää, mitä tiloja ajetaan milläkin koneella  
- 
-    https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/  
-    https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html  
 
 ### Salt overview   
-  [Salt user guide](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
+  [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
   
   - Rules of YAML:  
   YAML (Yet Another Markup Language, nykyään YAML Ain't Markup Language) on pääasiassa konffaukseen käytetty ohjelmointikieli;  
@@ -25,16 +22,16 @@
   
   - YAML simple structure:
 
-1. Skalaarit eli _avain: arvo_ parit
-2. Lista = avain jonka alle sisentyy arvoluettelo
-3. Kirjasto = kokoelma skalaareista ja listoista
+1. Skalaarit eli _avain: arvo_ parit  
+2. Lista = avain jonka alle sisentyy arvoluettelo  
+3. Sanakirja = kokoelma skalaareista ja listoista  
    
 
-    - Lists and dictionaries - YAML block structures:  
+  - Lists and dictionaries - YAML block structures:  
 
-    YAML on järjestetty lohkorakenteiksi  
-    Sisennys määrittää kontekstin eli ominaisuuksien ja listojen sisennys ehdotonta; vakio on kaksi välilyöntiä  
-   Kokoelman jokainen merkintä osoitetaan viivalla -.
+  YAML on järjestetty lohkorakenteiksi  
+  Sisennys määrittää kontekstin eli ominaisuuksien ja listojen sisennys ehdotonta; vakio on kaksi välilyöntiä  
+  Kokoelman jokainen merkintä osoitetaan viivalla -.
 
 ### Salt states  
   [Salt states](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)
@@ -59,8 +56,13 @@
   Satojen tilojen ja tuhansien koneiden ympäristössä on epäkäytännöllistä ajaa lukuisia yksittäisiä tiloja  
     -> top.sls tiedosto
   
+  - Create the SSH state, Create the Apache state:  
 
-  - Create the SSH state, Create the Apache state:
+  En tiedä, mitä näistä tiivistää  
+
+  - Pkg-File-Service
+
+  Tero Karvisen [artikkelissa](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh) näkyy sshd tilarakenne ja konffaustiedosto  
 
 
   ## a) Hello SLS! sekä b) Top  
@@ -82,11 +84,10 @@
 
   ![img](./h4.2.png)  
 
-  Sieltä löytyi. Takaisin masterille ja ajoin komennon ```$ sudo salt '*' state.apply``` uudelleen  
+  Löytyi!  
+  Top.sls tiedostostosta ei tässä kuvaa mutta ajoin komennon ```$ sudo salt '*' state.apply```  
 
   ![img](./h4.3.png)  
-
-  Kuvasta voi lukea, että komennon ajon jälkeen muutoksia ei tapahtunut.  
 
   ## c) Apache  
 
@@ -139,7 +140,7 @@
   - Aluksi vahingossa pkg.installed:  
   ![image](https://github.com/sibbee/p.hallinta/assets/149330317/fda27911-6529-4b28-9d28-a11e2dd062cf)  
 
-  - Ja vielä alkuperäisen apache-kansion nimeksi apache2  
+  - Ja vielä nimen kanssa säätöä    
   ![image](https://github.com/sibbee/p.hallinta/assets/149330317/d1bc5b21-8480-4468-b3d9-2c0be1dbeddd)  
 
   Korjasin siis nuo ja komennolla ```$ sudo salt '*' state.apply apache2``` näytti seuraavaa:  
@@ -150,9 +151,25 @@
 
   "The following packages were installed/updated: apache2" eli Apachen asennus onnistui.  
 
-  ## SSHouto  
+  ![image](https://github.com/sibbee/p.hallinta/assets/149330317/07619bb6-eabf-43e9-9b6b-79162145abf1)  
 
-  En valitettavasti saanut tätä tehtävää tehtyä.  
+  Uudelleen curl, sivu on korvattu.  
+
+  ## Lähteet  
+
+  Tero Karvinen 2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/  
+  Tero Karvinen 2023. Salt Vagrant. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file  
+  Tero Karvinen 2021. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/  
+  Tero Karvinen 2018. Pkg-File-Service. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh  
+
+  Salt project. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml  
+  Salt project. Salt user guide: Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules  
+  Salt project. salt.states.file. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html  
+  
+  Geeksforgeeks.org. mkdir command in Linux with Examples. Luettavissa: https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/  
+  
+
+  
 
   
   
