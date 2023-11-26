@@ -3,12 +3,36 @@
 ## x) Lue ja tiivistä  
 
 Tero Karvisen [artikkelin](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/) tiivistys:  
-Asenna ensin kaikki manuaalisesti.  
-Selvitä, mitä määritystiedostoja on muokattu.  
 
+Asenna ensin kaikki manuaalisesti.  
+Selvitä, mitä määritystiedostoja on muokattu; sudolla tehdyt muokkaukset ilmiselviä  
+Idempotentit komennot tiloihin  
+Ongelmatilanteissa mm. oikeuksien tarkastaminen  
 
 ## a) CSI Kerava  
 Näytä 'find' avulla viimeisimmäksi muokatut tiedostot /etc/-hakemistosta ja kotihakemistostasi. Selitä kaikki käyttämäsi parametrit ja format string 'man find' avulla.  
+
+Ensin /etc/ kansio:  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/32646391-5ea7-41bf-9d3f-1b267d4a3bfb)  
+
+Siellä näkyy tiedosto muokkaus.txt jonka loin ja testasin näkyykö  
+Ja kotihakemisto:  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/be6e6480-bfe3-4338-8ddb-269215df1a4e)  
+
+Olen tehnyt tehtäviä vähän eri järjestyksissä niin näkyy screenshotteja :D  
+
+Komennon avaus:  
+sudo = toimin pääkäyttäjän oikeuksilla  
+find = etsi-komento  
+/etc/ = hakemisto, josta nyt etsitään   
+-printf = print format; tulosta seuraavalla tavalla  
+%T+ = muokkauspäivä ja aika  
+%p = tiedoston nimi
+sort -r = sort reverse eli uusimmat ensin  
+head = 10 ensimmäistä riviä  
+
 
 ## b) Gui2fs  
 Muokkaa asetuksia jostain graafisen käyttöliittymän (GUI) ohjelmasta käyttäen ohjelman valikoita ja dialogeja. Etsi tämä asetus tiedostojärjestelmästä.  
