@@ -4,6 +4,7 @@
 
 Tero Karvisen [artikkelin](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/) tiivistys:  
 
+Artikkelissa ohjeistetaan miten Saltilla luodaan Apachessa automaattisesti käyttäjän kotisivut.  
 Asenna ensin kaikki manuaalisesti.  
 Selvitä, mitä määritystiedostoja on muokattu; sudolla tehdyt muokkaukset ilmiselviä  
 Idempotentit komennot tiloihin  
@@ -64,6 +65,21 @@ Löytyi, tämän jälkeen vielä itse tilan ajaminen. Succeeded = 1
 
 ## d) Apassi  
 Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.  
+
+Aloitin tehtävän katsomalla Tero Karvisen [ohjeita](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/) ja luomalla HTML-tiedoston.  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/6bddba81-d93e-463a-8a74-c40b32f92de7)  
+
+Tiedosto luotu, seuraavaksi loin tilatiedoston, jonka sisälle ohjeista saatu koodi  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/279541f3-5231-43b3-a247-f4977d5feb78)  
+
+Ja komennon ajo onnistuneesti. Kuva toisen ajokerran jälkeen sillä selkeämpi (idempotenssi; ei muutoksia)  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/f2786dc7-9be5-4fce-b4dc-229c3650acd0)  
+
+
+
 
 ## e) Ämpärillinen  
 Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.  
