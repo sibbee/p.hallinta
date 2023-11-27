@@ -42,7 +42,7 @@ Muokkaa asetuksia jostain graafisen käyttöliittymän (GUI) ohjelmasta käyttä
 Tee Salt-tila, joka asentaa järjestelmään uuden komennon.  
 
 Siirryin tätä varten ensin /usr/bin kansioon ja loin uuden tiedoston nimeltä "hello"  
-Kirjoitin tiedoston sisään yksinkertaisen hei maailma -komennon  
+Kirjoitin tiedoston sisään yksinkertaisen hello world -komennon  
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/9cfdc5c8-b69a-4d16-9aee-aa6dc63a6b75)  
 
@@ -84,10 +84,12 @@ Ja komennon ajo onnistuneesti. Kuva toisen ajokerran jälkeen sillä selkeämpi 
 ## e) Ämpärillinen  
 Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.  
 
-![image](https://github.com/sibbee/p.hallinta/assets/149330317/729ef728-2e8c-4072-8ee7-8dc6252a08ab)  
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/50323d99-143b-4453-bf35-4fb504f09d0a)  
 
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/63c04da7-b68c-48da-9571-3a6f87ba4f27)  
 
-![image](https://github.com/sibbee/p.hallinta/assets/149330317/014f3421-de6a-4359-bac2-274e067ca027)  
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/e4028491-e593-49fc-8f8b-0881063ca9cd)  
+
 
 
 
