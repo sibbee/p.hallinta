@@ -84,4 +84,10 @@ Ja komennon ajo onnistuneesti. Kuva toisen ajokerran jälkeen sillä selkeämpi 
 ## e) Ämpärillinen  
 Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.  
 
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/729ef728-2e8c-4072-8ee7-8dc6252a08ab)  
+
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/014f3421-de6a-4359-bac2-274e067ca027)  
+
+
 
