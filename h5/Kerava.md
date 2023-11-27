@@ -13,30 +13,44 @@ Ongelmatilanteissa mm. oikeuksien tarkastaminen
 ## a) CSI Kerava  
 Näytä 'find' avulla viimeisimmäksi muokatut tiedostot /etc/-hakemistosta ja kotihakemistostasi. Selitä kaikki käyttämäsi parametrit ja format string 'man find' avulla.  
 
-Ensin /etc/ kansio:  
+Eli siis komennolla ```$ sudo find -printf "%T+ %p\n" | sort -r | head``` näytän viimeisimmät tapahtumat  
+
+Ensiksi /etc/ kansiosta:  
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/32646391-5ea7-41bf-9d3f-1b267d4a3bfb)  
 
-Siellä näkyy tiedosto muokkaus.txt jonka loin ja testasin näkyykö  
-Ja kotihakemisto:  
+Siellä näkyy tiedosto muokkaus.txt jonka loin aikaisemmin ja testasin näkyykö  
+Sekä vielä kotihakemistosta:  
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/be6e6480-bfe3-4338-8ddb-269215df1a4e)  
 
 Olen tehnyt tehtäviä vähän eri järjestyksissä niin näkyy screenshotteja :D  
 
 Komennon avaus:  
-sudo = toimin pääkäyttäjän oikeuksilla  
+sudo = superuser do eli tee toimi pääkäyttäjän oikeuksilla  
 find = etsi-komento  
 /etc/ = hakemisto, josta nyt etsitään   
 -printf = print format; tulosta seuraavalla tavalla  
 %T+ = muokkauspäivä ja aika  
-%p = tiedoston nimi
-sort -r = sort reverse eli uusimmat ensin  
-head = 10 ensimmäistä riviä  
+%p = tiedoston nimi  
+sort -r = sort reverse eli käänteisjärjestys    
+head = 10 ensimmäistä riviä (oletus)  
+
+(man-pages & [Geeksforgeeks](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/))
 
 
 ## b) Gui2fs  
 Muokkaa asetuksia jostain graafisen käyttöliittymän (GUI) ohjelmasta käyttäen ohjelman valikoita ja dialogeja. Etsi tämä asetus tiedostojärjestelmästä.  
+
+Tässä osiossa menin ensiksi tekemään muutoksen kurssilla luodun Debian-virtuaalikoneen GUI:ssa ja yksinkertainen sellainen oli tiedoston luonti Documents-kansioon.  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/ed4906b2-651a-4f13-93f7-cf400dbe4094)  
+
+Tämän jälkeen siirryin takaisin terminaaliin ja suunnistin samaiseen kansioon nähdäkseni muutos. 
+Komennolla ```$ find -printf "%T+ %p\n" | sort``` näkyi luomani tiedosto.   
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/6b740d44-ca26-40c8-b58f-834f4bccf6ec)  
+
 
 ## c) Komennus  
 Tee Salt-tila, joka asentaa järjestelmään uuden komennon.  
@@ -84,11 +98,29 @@ Ja komennon ajo onnistuneesti. Kuva toisen ajokerran jälkeen sillä selkeämpi 
 ## e) Ämpärillinen  
 Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.  
 
+Samantyyppinen kun aikaisemmat tehtävät. Tätä varten loin aluksi uuden kansion "kansio", johon loin kolme snadia komentotiedostoa.  
+
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/50323d99-143b-4453-bf35-4fb504f09d0a)  
+
+Sen jälkeen loin tilatiedoston, jonka sisälle seuraavasti:  
+[Chris K.](https://github.com/bladexanarchy/pal_hal/blob/main/h5/h5.md)  auttoi  
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/63c04da7-b68c-48da-9571-3a6f87ba4f27)  
 
+Ja vielä tilan ajaminen --local sillä tälle koneelle ei ole luotu minioneja  
+
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/e4028491-e593-49fc-8f8b-0881063ca9cd)  
+
+
+## Lähteet  
+
+Tero Karvinen 2018. Apache User Homepages Automatically - Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/ Luettu: 26.11.2023  
+
+Tero Karvinen 2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/  
+
+Chris Kiuru 2023. h5 Luettavissa: https://github.com/bladexanarchy/pal_hal/blob/main/h5/h5.md Viitattu tehtävään e) 27.11.2023  
+
+Geeksforgeeks.org. SORT command in Linux/Unix with examples. Luettavissa: https://www.geeksforgeeks.org/sort-command-linuxunix-examples/ Luettu: 26.11.
 
 
 
