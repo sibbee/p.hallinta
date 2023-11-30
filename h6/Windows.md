@@ -10,4 +10,4 @@
 
 ## d) Kokeile Saltin file -toimintoa Windowsilla  
 
-## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla  
+## e) Kokeile jotain itsellesi uutta toimintoa Saltista
