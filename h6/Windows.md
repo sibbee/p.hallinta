@@ -55,8 +55,10 @@ Tässä tehtävässä loin kuvan polkuun tiedoston, joka ilmestyi työpöydälle
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/d93ac82c-3172-4300-a508-fcbab5e0f74e)  
 
+Kirjoitin tiedoston sisälle ja shellissä luin sisällön ```cat tiedosto.txt``` komennolla  
+
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/666f1627-3dc5-4c62-9f8b-6bd48308c59d)  
 
-Kirjoitin tiedoston sisälle ja shellissä luin sisällön ```cat tiedosto.txt``` komennolla  
+
 
 ## e) Kokeile jotain itsellesi uutta toimintoa Saltista  
