@@ -9,6 +9,14 @@ LTSC = long term servicing channel eli pidempi tuki
 RAM ainakin 8GB  
 
 
+LSB Workgroup, The Linux Foundation 2015: [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)  
+
+FHS eli Filesystem Hierarchy Standard mahdollistaa muun muassa:  
+- Ohjelmistot ja käyttäjät voivat ennustaa asennettujen tiedostojen ja hakemistojen sijainnin
+- 
+
+
+
 
 
 ## a) Asenna Windows virtuaalikoneeseen  
@@ -62,3 +70,8 @@ Kirjoitin tiedoston sisälle ja shellissä luin sisällön ```cat tiedosto.txt``
 
 
 ## e) Kokeile jotain itsellesi uutta toimintoa Saltista  
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/e6b2805c-b4b8-4755-92d1-9336b07b3471)  
+
+
+
