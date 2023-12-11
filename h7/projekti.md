@@ -6,4 +6,7 @@ Tässä projektissa tavoittenani on luoda moduuli, joka sisältää vähän kaik
 Poistin edelliset virtuaalikoneet komennolla ```vagrant destroy``` ja asensin uudet [Tero Karvisen ohjeiden](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) mukaisesti.  
 Uudet virtuaalikoneet noudattavat myös herra-orja arkkitehtuuria, käytössäni yksi herra ja kaksi minionia.  
 
+Loin ensiksi polkuun /srv/salt apache2 kansion asennusta varten. Haluan myös omat kotisivut.  
+
+
 
