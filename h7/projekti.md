@@ -21,7 +21,7 @@ Kotisivuni ulkoasu on hieman vaiheessa.
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/2152dd66-679c-43b0-99c3-5974abad3fd3)  
 
 Tämän jälkeen ajattelin että scriptin kirjottaminen olisi kivaa.  
-Tässä näkyy loruja.sh joka ajettaessa näyttää päivämäärän ja erinäisiä tietoja virtuaalikoneesta.  
+Tässä näkyy loruja.sh, jonka kirjoitin näyttämään mm. päivämäärän ja erinäisiä tietoja virtuaalikoneesta.  
 Echojen määrä...
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/9cf4305f-53de-4c66-9ab4-8916c2171375)  
