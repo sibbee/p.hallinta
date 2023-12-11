@@ -21,15 +21,19 @@ Kotisivuni ulkoasu on hieman vaiheessa.
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/2152dd66-679c-43b0-99c3-5974abad3fd3)  
 
-Tämän jälkeen ajattelin että muutamien erilaisten scriptien kirjottaminen olisi kivaa.  
+Tämän jälkeen ajattelin että scriptin kirjottaminen olisi kivaa.  
 Tässä näkyy loruja.sh joka ajettaessa näyttää päivämäärän ja erinäisiä tietoja virtuaalikoneesta.  
+Echojen määrä...
 
-![image](https://github.com/sibbee/p.hallinta/assets/149330317/17babdf2-0d38-4580-83a9-67976a9716e4)  
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/9cf4305f-53de-4c66-9ab4-8916c2171375)  
+ 
 
 ## Lähteet:  
 
 Tero Karvinen 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file  
 Tero Karvinen 2023. Apache User Homepages Automatically. Luettavissa: homepages-automatically-salt-package-file-service-example/  
+
+2DayGeek.com. Bash Script to View System Information on Linux. Luettavissa: https://www.2daygeek.com/bash-shell-script-view-linux-system-information/  
 
 
 
