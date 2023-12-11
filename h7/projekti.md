@@ -25,6 +25,11 @@ Tässä näkyy loruja.sh, jonka kirjoitin näyttämään mm. päivämäärän ja
 Echojen määrä...
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/9cf4305f-53de-4c66-9ab4-8916c2171375)  
+
+Erilaisten ohjelmien asennusta 
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/c8b9d572-c3bc-4590-badc-5954d2915217) 
+
  
 
 ## Lähteet:  
