@@ -48,6 +48,18 @@ Tämä kohta ei ollut kovin kummoinen.
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/c8b9d572-c3bc-4590-badc-5954d2915217) 
 
+## Mato ja käärme 
+
+```sudo apt-get install bsdgames``` asensi pelipaketin. 
+
+Kirjoittamalla "snake" avasi kummallisen pelin jossa minua jahdattiin. 
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/978971d9-09ab-4d4c-8a1e-8af7d939e565) 
+
+Testasin huviksi sanaa "worm" joka avasi perinteisen matopelin, kontrolli numpadilla :)
+
+![image](https://github.com/sibbee/p.hallinta/assets/149330317/a13d38aa-a1f5-4b4b-b674-93cac8f64c9d) 
+
  
 
 ## Lähteet:  
@@ -59,9 +71,12 @@ Tero Karvinen 2023. Apache User Homepages Automatically. Luettavissa: homepages-
 
 AskUbuntu. sudo apt update error: "Release file is not yet valid". Luettavissa: https://askubuntu.com/questions/1096930/sudo-apt-update-error-release-file-is-not-yet-valid 
 
+AskUbuntu. How to play snake in terminal? Luettavissa: https://askubuntu.com/questions/376558/how-to-play-snake-in-terminal 
+
 OpenAI ChatGPT. How can I view system information bash script 
 
 Machine clock loses time synchronisation when computer goes to sleep. Luettavissa: https://github.com/laravel/homestead/issues/799 
+
 
 
 
