@@ -73,7 +73,7 @@ AskUbuntu. sudo apt update error: "Release file is not yet valid". Luettavissa: 
 
 AskUbuntu. How to play snake in terminal? Luettavissa: https://askubuntu.com/questions/376558/how-to-play-snake-in-terminal 
 
-Siiri Katilainen 2023. h5. Luettavissa: 
+Siiri Katilainen 2023. h4 Demonit. Luettavissa: https://github.com/sibbee/p.hallinta/blob/main/h4/Demonit.md 
 
 OpenAI ChatGPT. How can I view system information bash script 
 
