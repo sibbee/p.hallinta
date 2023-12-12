@@ -54,6 +54,8 @@ Tämä kohta ei ollut kovin kummoinen. Kertaus tekee kuitenkin aina hyvää.
 
 ## Mato ja käärme 
 
+Koin että kertaustyyppisestä miniprojektista puuttuu matopeli. 
+
 Komento ```sudo apt-get install bsdgames``` asensi pelipaketin. 
 
 Kirjoittamalla "snake" avasi kummallisen pelin jossa minua jahdattiin. 
