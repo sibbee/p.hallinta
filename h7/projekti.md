@@ -37,6 +37,8 @@ Tämän jälkeen scriptin kirjoittamista.
 Tässä näkyy loruja.sh, jonka kirjoitin näyttämään mm. päivämäärän ja erinäisiä tietoja virtuaalikoneesta.  
 Echojen määrä aiheutti pientä päänsärkyä.. ilmeisesti ei muuta tapaa saada tyhjää väliä? 
 
+Parilla eri tavalla kirjoitettu scriptiin järjestelmätietoja. Echo -e [2DayGeek-sivulta](https://www.2daygeek.com/bash-shell-script-view-linux-system-information/) ja toisen vaihtoehdon kertoi tekoäly.. 
+
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/9cf4305f-53de-4c66-9ab4-8916c2171375)  
 
 ## Ohjelmapaketti 
