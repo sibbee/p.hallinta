@@ -33,7 +33,7 @@ Yhteenveto ja kotisivuni ulkoasu.
 
 Tämän jälkeen scriptin kirjoittamista.  
 Tässä näkyy loruja.sh, jonka kirjoitin näyttämään mm. päivämäärän ja erinäisiä tietoja virtuaalikoneesta.  
-Echojen määrä...
+Echojen määrä aiheutti pientä päänsärkyä.. ilmeisesti ei muuta tapaa saada tyhjää väliä? 
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/9cf4305f-53de-4c66-9ab4-8916c2171375)  
 
