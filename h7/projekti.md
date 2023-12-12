@@ -50,7 +50,7 @@ Tämä kohta ei ollut kovin kummoinen.
 
 ## Mato ja käärme 
 
-```sudo apt-get install bsdgames``` asensi pelipaketin. 
+Komento ```sudo apt-get install bsdgames``` asensi pelipaketin. 
 
 Kirjoittamalla "snake" avasi kummallisen pelin jossa minua jahdattiin. 
 
