@@ -43,7 +43,7 @@ Kirjoitin tilatiedoston joka asentaa erilaisia ohjelmia
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/c7d4cad2-0b5a-4cf6-866e-30fe0d234858)
 
-Tämä kohta ei ollut kovin kummoinen. 
+Tämä kohta ei ollut kovin kummoinen. Kertaus tekee kuitenkin aina hyvää. 
 
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/c8b9d572-c3bc-4590-badc-5954d2915217) 
@@ -56,7 +56,7 @@ Kirjoittamalla "snake" avasi kummallisen pelin jossa minua jahdattiin.
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/978971d9-09ab-4d4c-8a1e-8af7d939e565) 
 
-Testasin huviksi sanaa "worm" joka avasi perinteisen matopelin, kontrolli numpadilla :)
+Testasin huviksi sanaa "worm" joka avasi perinteisen matopelin, kontrolli numpadilla/nuolinäppäimillä. 
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/a13d38aa-a1f5-4b4b-b674-93cac8f64c9d) 
 
