@@ -16,7 +16,7 @@ Ajoin tämän t001 koneella.
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/edcea6b1-e34a-4644-a30a-4f583f010759)  
 
-Kotisivuni ulkoasu on hieman vaiheessa.  
+Kotisivuni ulkoasu.  
 
 ![image](https://github.com/sibbee/p.hallinta/assets/149330317/2152dd66-679c-43b0-99c3-5974abad3fd3)  
 
