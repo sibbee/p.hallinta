@@ -1,6 +1,7 @@
 # h7 / Miniprojekti  
 
 Tämä miniprojekti on osa Tero Karvisen [Palvelinten Hallinta](https://terokarvinen.com/2023/configuration-management-2023-autumn/) -kurssia. 
+
 Sisältää kertaustyyppisesti kurssin aiheita, koska sekä resurssit (aika, äly) olivat vähissä ja taitotasoni vuoksi kurssilla käydyt asiat tarpeeksi monimutkaisia. 
 
 Poistin edelliset virtuaalikoneet komennolla ```vagrant destroy``` ja asensin uudet [Tero Karvisen ohjeiden](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) mukaisesti.  
