@@ -21,7 +21,7 @@ Tätä ennen ilmeni virheilmoitus:
 _Release file for ... is not valid yet (invalid for another 10h 35min 28s). Updates for this repository will not be applied._ josta hämmennyin kovasti. 
 
 Keskustelu [Redditissä](https://askubuntu.com/questions/1096930/sudo-apt-update-error-release-file-is-not-yet-valid) & muut apusivut ohjeistivat päivittämään aikavyöhykkeen (toden totta, toinen minioni näytti eilisiltaa ja herra myös jäljessä) 
-Tästä ei valitettavasti kuvaa, koitin paria eri komentoa mutta lopulta tuhosin vain koneen ja loin uuden. 
+Tästä ei valitettavasti kuvaa, koitin paria eri komentoa mutta lopulta tuhosin vain koneen ja loin uuden kun ärsytti aika paljon. :D 
 
 Epäilen ongelman syyksi mahdollista sleep modea 
 
